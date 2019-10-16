@@ -11,8 +11,9 @@ attr_reader :name, :shows
     @shows << show
   end
 
+## does not work but ran out of time - help!
   def highest_paid_actor
-  highest_paid = characters.max_by do |character|
+  highest_paid = @characters.max_by do |character|
     character.salary
     highest_paid.actor
   end
